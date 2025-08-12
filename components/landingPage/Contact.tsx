@@ -145,8 +145,8 @@ export default function Contact() {
                   Contact Information
                 </h3>
                 <p className="text-black/70 dark:text-white/70 mb-8">
-                  We're here to help and answer any question you might have. We
-                  look forward to hearing from you.
+                  We&apos;re here to help and answer any question you might
+                  have. We look forward to hearing from you.
                 </p>
               </div>
 

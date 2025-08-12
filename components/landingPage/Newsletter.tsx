@@ -33,9 +33,9 @@ export default function Newsletter() {
               Thank You for Subscribing!
             </h2>
             <p className="text-black/70 dark:text-white/70 mb-6">
-              You've successfully subscribed to our newsletter. We'll keep you
-              updated with the latest tech insights, project updates, and
-              exclusive offers.
+              You&apos;ve successfully subscribed to our newsletter. We&apos;ll
+              keep you updated with the latest tech insights, project updates,
+              and exclusive offers.
             </p>
             <Button
               onClick={() => setIsSubscribed(false)}

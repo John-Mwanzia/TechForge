@@ -16,8 +16,8 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-black/70 dark:text-white/70 mb-6 sm:mb-8 max-w-3xl leading-relaxed px-4 sm:px-0">
-          We don't just write code — we solve problems, accelerate growth, and
-          empower your digital journey.
+          We don&apos;t just write code — we solve problems, accelerate growth,
+          and empower your digital journey.
         </p>
 
         <Button className="px-6 sm:px-8 py-3 sm:py-4 flex items-center gap-2 text-white rounded-lg hover:bg-primary/90 transition-all duration-300 text-sm sm:text-base font-semibold shadow-lg hover:shadow-xl hover:scale-105">

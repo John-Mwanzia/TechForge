@@ -100,7 +100,7 @@ export default function Portfolio() {
             Our Portfolio
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-black/70 dark:text-white/70 max-w-3xl mx-auto px-4 sm:px-0">
-            Explore our recent projects and see how we've helped businesses
+            Explore our recent projects and see how we&apos;ve helped businesses
             transform their digital presence.
           </p>
         </div>

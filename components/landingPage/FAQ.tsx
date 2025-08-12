@@ -35,7 +35,7 @@ export default function FAQ() {
     {
       question: "Can you work with our existing systems?",
       answer:
-        "Absolutely! We specialize in system integration and can work with your existing infrastructure. We'll assess your current setup and provide solutions that seamlessly integrate with your existing systems.",
+        "Absolutely! We specialize in system integration and can work with your existing infrastructure. We&apos;ll assess your current setup and provide solutions that seamlessly integrate with your existing systems.",
     },
     {
       question: "What is your pricing structure?",
@@ -45,7 +45,7 @@ export default function FAQ() {
     {
       question: "Do you sign NDAs and ensure data security?",
       answer:
-        "Yes, we take data security very seriously. We're happy to sign NDAs and follow strict security protocols. All our development processes comply with industry security standards and data protection regulations.",
+        "Yes, we take data security very seriously. We&apos;re happy to sign NDAs and follow strict security protocols. All our development processes comply with industry security standards and data protection regulations.",
     },
   ];
 
@@ -62,8 +62,8 @@ export default function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-black/70 dark:text-white/70 max-w-3xl mx-auto px-4 sm:px-0">
-            Got questions? We've got answers. Here are some of the most common
-            questions we receive from our clients.
+            Got questions? We&apos;ve got answers. Here are some of the most
+            common questions we receive from our clients.
           </p>
         </div>
 
@@ -116,8 +116,8 @@ export default function FAQ() {
               Still have questions?
             </h3>
             <p className="text-black/70 dark:text-white/70 mb-6">
-              Can't find the answer you're looking for? Our team is here to help
-              you with any questions or concerns.
+              Can&apos;t find the answer you&apos;re looking for? Our team is
+              here to help you with any questions or concerns.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
