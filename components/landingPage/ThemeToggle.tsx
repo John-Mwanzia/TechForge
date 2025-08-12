@@ -1,7 +1,12 @@
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function ThemeToggle({ theme, setTheme }) {
+interface ThemeToggleProps {
+  theme: string;
+  setTheme: (theme: string) => void;
+}
+
+export function ThemeToggle({ theme, setTheme }: ThemeToggleProps) {
   return (
     <Button
       size="icon"

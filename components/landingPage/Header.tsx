@@ -7,7 +7,12 @@ import { Button } from "../ui/button";
 import { FaBars } from "react-icons/fa";
 import { ThemeToggle } from "./ThemeToggle";
 
-export default function Header({ theme, setTheme }) {
+interface HeaderProps {
+  theme: string;
+  setTheme: (theme: string) => void;
+}
+
+export default function Header({ theme, setTheme }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
