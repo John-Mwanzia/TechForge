@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex pt-24 sm:pt-32 md:pt-40 lg:pt-48 pb-12 sm:pb-16 md:pb-20 items-center justify-center">
       <div className="flex flex-col items-center justify-center text-center max-w-5xl">
         <Button className="mb-4 sm:mb-6 shadow-2xl rounded-full bg-transparent border border-primary text-black dark:text-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base hover:bg-primary/10 transition-all duration-300">
-          Let's Build Your Vision !
+          Let&apos;s Build Your Vision !
         </Button>
 
         <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black dark:text-white mb-4 sm:mb-6 leading-tight">

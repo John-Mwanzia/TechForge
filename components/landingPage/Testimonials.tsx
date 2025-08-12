@@ -26,7 +26,7 @@ export default function Testimonials() {
       position: "CTO",
       company: "DataFlow Systems",
       rating: 5,
-      text: "Working with TechForge was a game-changer. They not only delivered our mobile app on time but also provided ongoing support that's been invaluable. Highly recommended!",
+      text: "Working with TechForge was a game-changer. They not only delivered our mobile app on time but also provided ongoing support that&apos;s been invaluable. Highly recommended!",
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export default function Testimonials() {
       position: "Operations Manager",
       company: "LogiCore Industries",
       rating: 5,
-      text: "TechForge's hardware solutions and IT consulting helped us modernize our entire system. The ROI was evident within the first quarter. Professional and reliable!",
+      text: "TechForge&apos;s hardware solutions and IT consulting helped us modernize our entire system. The ROI was evident within the first quarter. Professional and reliable!",
     },
     {
       id: 5,

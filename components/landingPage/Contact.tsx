@@ -36,8 +36,8 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-black/70 dark:text-white/70 max-w-3xl mx-auto px-4 sm:px-0">
-            Ready to transform your business? Let's discuss your project and see
-            how we can help you achieve your goals.
+            Ready to transform your business? Let&apos;s discuss your project
+            and see how we can help you achieve your goals.
           </p>
         </div>
 
