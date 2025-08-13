@@ -26,10 +26,10 @@ export default function Header({ theme, setTheme }: HeaderProps) {
 
   return (
     <div>
-      <header className="fixed top-0 left-0 w-full z-50 overflow-hidden bg-background/80 backdrop-blur-md">
+      <header className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md">
         <div className="sm:container mx-auto flex items-center justify-between py-4 border-b border-black/10 dark:border-white/20">
           <div className="flex w-full justify-between items-center">
-            <div className="text-3xl font-bold z-50">
+            <div className="text-3xl font-bold z-[60]">
               <Button className="font-sans font-bold text-3xl bg-transparent text-black dark:text-white hover:bg-transparent hover:text-primary transition-colors duration-300 px-0">
                 TechForge
               </Button>
@@ -55,67 +55,80 @@ export default function Header({ theme, setTheme }: HeaderProps) {
 
             <div className="hidden md:flex md:gap-4">
               <ThemeToggle theme={theme} setTheme={setTheme} />
-
               <Button>Get Quote</Button>
             </div>
-          </div>
-          {isOpen && (
-            <div className="fixed inset-0 z-40 bg-background/95 backdrop-blur-md md:hidden">
-              <div className="flex flex-col items-center justify-center h-full space-y-8 px-6">
-                <a
-                  href="#home"
-                  className="text-2xl font-semibold text-black dark:text-white hover:text-primary transition-colors"
-                  onClick={toggleMenu}
-                >
-                  Home
-                </a>
-                <a
-                  href="#services"
-                  className="text-2xl font-semibold text-black dark:text-white hover:text-primary transition-colors"
-                  onClick={toggleMenu}
-                >
-                  Services
-                </a>
-                <a
-                  href="#about"
-                  className="text-2xl font-semibold text-black dark:text-white hover:text-primary transition-colors"
-                  onClick={toggleMenu}
-                >
-                  About
-                </a>
-                <a
-                  href="#contact"
-                  className="text-2xl font-semibold text-black dark:text-white hover:text-primary transition-colors"
-                  onClick={toggleMenu}
-                >
-                  Contact
-                </a>
-                <div className="pt-4">
-                  <ThemeToggle theme={theme} setTheme={setTheme} />
-                </div>
-                <Button className="mt-4" onClick={toggleMenu}>
-                  Get Quote
-                </Button>
-              </div>
-            </div>
-          )}
 
-          <div className="block md:hidden z-50 relative">
-            {isOpen ? (
-              <X
-                size={25}
-                className="text-black dark:text-white font-bold cursor-pointer"
-                onClick={toggleMenu}
-              />
-            ) : (
-              <FaBars
-                className="text-black dark:text-white text-xl cursor-pointer"
-                onClick={toggleMenu}
-              />
-            )}
+            {/* Mobile Menu Button */}
+            <div className="block md:hidden z-[60]">
+              {isOpen ? (
+                <X
+                  size={25}
+                  className="text-black dark:text-white font-bold cursor-pointer"
+                  onClick={toggleMenu}
+                />
+              ) : (
+                <FaBars
+                  className="text-black dark:text-white text-xl cursor-pointer"
+                  onClick={toggleMenu}
+                />
+              )}
+            </div>
           </div>
         </div>
       </header>
+
+      {/* Mobile Menu Overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 z-40 bg-background/95 backdrop-blur-md md:hidden animate-fade-in">
+          <div className="flex flex-col items-center justify-center h-full space-y-8 px-6">
+            <a
+              href="#home"
+              className="text-2xl font-semibold text-black dark:text-white hover:text-primary transition-all duration-300 hover:scale-110 animate-slide-up"
+              style={{ animationDelay: "0.1s" }}
+              onClick={toggleMenu}
+            >
+              Home
+            </a>
+            <a
+              href="#services"
+              className="text-2xl font-semibold text-black dark:text-white hover:text-primary transition-all duration-300 hover:scale-110 animate-slide-up"
+              style={{ animationDelay: "0.2s" }}
+              onClick={toggleMenu}
+            >
+              Services
+            </a>
+            <a
+              href="#about"
+              className="text-2xl font-semibold text-black dark:text-white hover:text-primary transition-all duration-300 hover:scale-110 animate-slide-up"
+              style={{ animationDelay: "0.3s" }}
+              onClick={toggleMenu}
+            >
+              About
+            </a>
+            <a
+              href="#contact"
+              className="text-2xl font-semibold text-black dark:text-white hover:text-primary transition-all duration-300 hover:scale-110 animate-slide-up"
+              style={{ animationDelay: "0.4s" }}
+              onClick={toggleMenu}
+            >
+              Contact
+            </a>
+            <div
+              className="pt-4 animate-slide-up"
+              style={{ animationDelay: "0.5s" }}
+            >
+              <ThemeToggle theme={theme} setTheme={setTheme} />
+            </div>
+            <Button
+              className="mt-4 hover:scale-105 transition-transform duration-300 animate-slide-up"
+              style={{ animationDelay: "0.6s" }}
+              onClick={toggleMenu}
+            >
+              Get Quote
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
