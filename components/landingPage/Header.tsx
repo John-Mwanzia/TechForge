@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { FaBars } from "react-icons/fa";
 import { ThemeToggle } from "./ThemeToggle";
+import Link from "next/link";
 
 interface HeaderProps {
   theme: string;
@@ -38,10 +39,10 @@ export default function Header({ theme, setTheme }: HeaderProps) {
               <div>
                 <ul className="flex space-x-8 items-center text-basic">
                   <li className="text-black dark:text-white cursor-pointer transition-colors">
-                    <a href="#services">Services</a>
+                  <a href="#services">Services</a>
                   </li>
                   <li className="text-black dark:text-white cursor-pointer transition-colors">
-                    <a href="#products">Products</a>
+                    <Link href="/products">Products</Link>
                   </li>
                   <li className="text-black dark:text-white cursor-pointer transition-colors">
                     <a href="#about">About</a>
